@@ -290,7 +290,7 @@ callsites@^3.0.0:
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
-chalk@^4.0.0:
+chalk@^4.0.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
@@ -305,14 +305,16 @@ clone-response@^1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
-cloud189-sdk@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/cloud189-sdk/-/cloud189-sdk-1.0.1.tgz#651ba86adc1925fbe7e41fca8cf0c0748677bf77"
-  integrity sha512-sxx/76pjYgPySC+14Dnad/aQKUisWx+/8Uavl40M1dAoZiEym9DLT6NwG4OPHQbMTfwY0kCfG663HBTFCwFiGQ==
+cloud189-sdk@^1.0.6-alpha.2:
+  version "1.0.6-alpha.2"
+  resolved "https://registry.yarnpkg.com/cloud189-sdk/-/cloud189-sdk-1.0.6-alpha.2.tgz#a6bb9a1bd66459ef06c8aa1eb20277ad944ead5d"
+  integrity sha512-2lxGJ05FLdSdOz3BXzgLEyFjZpn8/l8QMiGHq1q/+CWRLMg1cABjFciPGg0XzY3SLg4j0wYaGdtvmNyt/GRRFw==
   dependencies:
+    chalk "^4.1.2"
     got "11.8.2"
     node-jsencrypt "^1.0.0"
     tough-cookie "^4.1.4"
+    tough-cookie-file-store "^2.0.3"
 
 color-convert@^2.0.1:
   version "2.0.1"
@@ -437,6 +439,11 @@ dom-walk@^0.1.0:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.2.tgz#0c548bef048f4d1f2a97249002236060daa3fd84"
   integrity sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==
+
+dotenv@^16.4.5:
+  version "16.4.7"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.7.tgz#0e20c5b82950140aa99be360a8a5f52335f53c26"
+  integrity sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==
 
 end-of-stream@^1.1.0:
   version "1.4.4"
@@ -1689,7 +1696,14 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-tough-cookie@^4.1.4:
+tough-cookie-file-store@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/tough-cookie-file-store/-/tough-cookie-file-store-2.0.3.tgz#788f7a6fe5cd8f61a1afb71b2f0b964ebf914b80"
+  integrity sha512-sMpZVcmFf6EYFHFFl+SYH4W1/OnXBYMGDsv2IlbQ2caHyFElW/UR/gpj/KYU1JwmP4dE9xqwv2+vWcmlXHojSw==
+  dependencies:
+    tough-cookie "^4.0.0"
+
+tough-cookie@^4.0.0, tough-cookie@^4.1.4:
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-4.1.4.tgz#945f1461b45b5a8c76821c33ea49c3ac192c1b36"
   integrity sha512-Loo5UUvLD9ScZ6jh8beX1T6sO1w2/MpCRpEP7V280GKMVUQ0Jzar2U3UJPsrdbziLEMMhu3Ujnq//rhiFuIeag==
